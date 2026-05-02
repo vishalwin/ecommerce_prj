@@ -3,7 +3,7 @@ from unittest.mock import patch, Mock
 from mock_put import update_user 
 
 class TestUpdateUser(unittest.TestCase):
-    @patch('mock_put.requests.put')
+    @patch('test_mock_put.requests.put')
     def test_update_user(self, mock_put):
         # Mock response data
         mock_response = Mock()
